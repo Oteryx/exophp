@@ -8,7 +8,7 @@ date_default_timezone_set('UTC');
 
 $dbconnexion = new PDO('mysql:host=localhost;dbname=exophp;port=3308', 'root',"", array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
-$NbreElementLigne = 1;
+$NbreElementLigne = 4;
 
 $menu['Les helpers'] = array();
 $menu['Les helpers']['link'] = '/helpers/';
