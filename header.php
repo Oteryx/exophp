@@ -34,8 +34,7 @@ $KeywordsPage = 'ce,que,tu,veux';
 <!-- Début menu à remplacer avec les tableaux de config.php -->
 <nav id="menu" class="panel" role="navigation">
     <?php
-    switch ($NbreElementLigne) {
-        case 1 :
+    for ($NbreElementLigne == 1) {
             echo '<ul>';
             $keys = array($menu['Les helpers']['titre']);
             foreach ($keys as $valeur) {
@@ -74,7 +73,8 @@ $KeywordsPage = 'ce,que,tu,veux';
                 echo '<li><div><a href="/fichier-csv/index.php">' . $valeur . '</a></div></li>';
             }
             echo '</ul>';
-        case 2:
+            }
+        for ($NbreElementLigne == 2)
             echo '<ul>';
             echo '<li>';
             $keys = array($menu['Les helpers']['titre']);
